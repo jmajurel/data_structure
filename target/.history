@@ -14,3 +14,10 @@ reload
 clean
 reload
 run
+reload
+clean
+reload
+run
+reload
+run
+exit

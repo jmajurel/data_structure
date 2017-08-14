@@ -4,7 +4,7 @@
 		module="graphpratice_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20170814115006"
+		publication="20170814222313"
 	>
 		<description>
 		graphpratice
@@ -38,5 +38,8 @@
 		<dependency org="org.apache.poi" name="poi" rev="3.16" conf="compile->default(compile)"/>
 		<dependency org="org.apache.poi" name="poi-ooxml" rev="3.16" conf="compile->default(compile)"/>
 		<dependency org="org.apache.poi" name="poi-ooxml-schemas" rev="3.16" conf="compile->default(compile)"/>
+		<dependency org="org.scalanlp" name="breeze_2.12" rev="0.13.2" conf="compile->default(compile)"/>
+		<dependency org="org.scalanlp" name="breeze-natives_2.12" rev="0.13.2" conf="compile->default(compile)"/>
+		<dependency org="org.scalanlp" name="breeze-viz_2.12" rev="0.13.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

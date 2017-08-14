@@ -4,6 +4,7 @@ import scalax.collection.GraphEdge._
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 import org.apache.poi.ss.usermodel.{Cell, CellType}
 import org.apache.poi.ss.usermodel.DataFormat
+import breeze.stats.distributions.{LogNormal,Gaussian}
 import java.io.{File, FileOutputStream}
 
 object GraphPratice{
@@ -25,19 +26,21 @@ object GraphPratice{
 
       bconeoffcostext: Option[Double],
       bcdayratext: Option[Double],
-      bconeoffcostbpp: Otion[Double],
+      bconeoffcostbpp: Option[Double],
       bcdayratebpp: Option[Double],
 
       pdffuncdur: String,
-      pdfdurargs: Array[Double],
+      pdfdurargs: Array[String],
       pdffunccost: String,
-      pdfcostargs: Array[Double]
+      pdfcostargs: Array[String]
 
     )
+    /* useful regex which analyse the text */
     
     val regexop = raw"([a-zA-Z]+\d+(\-\d+)?)".r
     val regexpre = raw"[a-zA-Z]+\d+(\-\d+)?".r
-    
+    val regexpdfarg = raw"(\d+(?:\.\d+)?),(\d+(?:\.\d+)?)".r  
+
     val workbook = WorkbookFactory.create(new File("Scenario_Operations_Overview_DEV.xlsx"))
     val sheet = workbook.getSheetAt(0)
     var row = 6 //This is hardcoded Bad!! need some times to improve it.
@@ -80,6 +83,14 @@ object GraphPratice{
       "<pdf_parameters_cost>" -> 33
       )
 
+    /**
+     * Map the pdf ref to real functions
+     */
+    val pdfrefitems = Map(
+      "log_normal" -> "LogNormal",
+      "normal" -> "Gaussian"
+      )
+
     var opmap:Map[String,Task] = Map("root" -> root)
     var g = Graph[Task,DiEdge]()
     var endfile = false
@@ -88,21 +99,21 @@ object GraphPratice{
 
       var currentrow = sheet.getRow(row)
 
-      if (currentrow !=null){
+      if (currentrow !=null) {
 
         var name: String =""
         var predecessor = List[String]() 
-        var startdate: String = ""
+        var startdate: Option[String] = None
         var bcdurext:Double = 0
         var bcdurbpp: Double = 0
-        var bconeoffcostext: Option[Double] = None()
-        var bcdayratext: Option[Double] = None()
-        var bconeoffcostbpp: Otion[Double] = None()
-        var bcdayratebpp: Option[Double] = None()
+        var bconeoffcostext: Option[Double] = None
+        var bcdayratext: Option[Double] = None
+        var bconeoffcostbpp: Option[Double] = None
+        var bcdayratebpp: Option[Double] = None
         var pdffuncdur: String = ""
-        var pdfdurargs = Array[Double]()
+        var pdfdurargs = Array[String]()
         var pdffunccost: String = ""
-        var pdfcostargs = Array[Double]()
+        var pdfcostargs = Array[String]()
 
         val cname = currentrow.getCell(columnrefitems("<op>"))
         val cpredecessor = currentrow.getCell(columnrefitems("<pre_op>"))
@@ -118,35 +129,130 @@ object GraphPratice{
         val cpdffunccost = currentrow.getCell(columnrefitems("<pdf_type_cost>"))
         val cpdfcostargs = currentrow.getCell(columnrefitems("<pdf_parameters_cost>"))
 
-        if(cname!=null){
-          if(cname.getCellTypeEnum()==CellType.STRING){
+        if(cname != null){
+          if(cname.getCellTypeEnum() == CellType.STRING){
             name = cname.getStringCellValue() 
-              if (name =="<END>") endfile = true
-              else name = regexop.findFirstIn(name).getOrElse("")
+            if (name =="<END>") endfile = true
+            else name = regexop.findFirstIn(name).getOrElse("")
           }
         }
 
-        if(cpredecessor!=null){
-          if(cpredecessor.getCellTypeEnum()==CellType.STRING){
-            var predecessors = cpredecessor.getStringCellValue()
-            if (predecessors == "<END>") endfile =true
-            else{
-              predecessor = regexpre.findAllIn(predecessors).toList 
-              println("predecessor:"+predecessor)
+        if(cpredecessor != null){
+          if(cpredecessor.getCellTypeEnum() == CellType.STRING){
+            cpredecessor.getStringCellValue() match {
+              case "<END>" => endfile = true
+              case regexpre(predecessors) => predecessor = predecessors
+            }
+          }
+        }
+
+        if(cstartdate != null){
+          if(cstartdate.getCellTypeEnum() == CellType.STRING){
+             cstartdate.getStringCellValue() match {
+               case "<END>" => endfile = true
+               case default => startdate = Some(default)
             }
           }
         }
 
         if(cbcdurext != null){
-          if(cbcdurext.getCellTypeEnum()==CellType.NUMERIC){
-            bcdurext = ccvalue.getNumericCellValue()
+          if(cbcdurext.getCellTypeEnum() == CellType.NUMERIC){
+            bcdurext = cbcdurext.getNumericCellValue()
           }
-          else if (cvalue.getCellTypeEnum() == CellType.STRING & cvalue.getStringCellValue() == "<END>") endfile = true
+          else if (cbcdurext.getCellTypeEnum() == CellType.STRING & cbcdurext.getStringCellValue() == "<END>") endfile = true
+        }
+
+        if(cbcdurbpp != null){
+          if(cbcdurbpp.getCellTypeEnum() == CellType.NUMERIC){
+            bcdurbpp = cbcdurbpp.getNumericCellValue()
+          }
+          else if (cbcdurbpp.getCellTypeEnum() == CellType.STRING & cbcdurbpp.getStringCellValue() == "<END>") endfile = true
+        }
+
+        if(cbconeoffcostext != null){
+          if(cbconeoffcostext.getCellTypeEnum() == CellType.NUMERIC){
+            bconeoffcostext = Some(cbconeoffcostext.getNumericCellValue())
+          }
+          else if (cbconeoffcostext.getCellTypeEnum() == CellType.STRING & cbconeoffcostext.getStringCellValue() == "<END>") endfile = true
+        }
+
+        if(cbcdayratext != null){
+          if(cbcdayratext.getCellTypeEnum() == CellType.NUMERIC){
+            bcdayratext = Some(cbcdayratext.getNumericCellValue())
+          }
+          else if (cbcdayratext.getCellTypeEnum() == CellType.STRING & cbcdayratext.getStringCellValue() == "<END>") endfile = true
+        }
+
+        if(cbconeoffcostbpp != null){
+          if(cbconeoffcostbpp.getCellTypeEnum() == CellType.NUMERIC){
+            bconeoffcostbpp = Some(cbconeoffcostbpp.getNumericCellValue())
+          }
+          else if (cbconeoffcostbpp.getCellTypeEnum() == CellType.STRING & cbconeoffcostbpp.getStringCellValue() == "<END>") endfile = true
+        }
+
+        if(cbcdayratebpp != null){
+          if(cbcdayratebpp.getCellTypeEnum() == CellType.NUMERIC){
+            bcdayratebpp = Some(cbcdayratebpp.getNumericCellValue())
+          }
+          else if (cbcdayratebpp.getCellTypeEnum() == CellType.STRING & cbcdayratebpp.getStringCellValue() == "<END>") endfile = true
+        }
+
+        if(cpdffuncdur != null){
+          if(cpdffuncdur.getCellTypeEnum() == CellType.STRING){
+            cpdffuncdur.getStringCellValue() match {
+              case "<END>" => endfile = true
+              case "log_normal" => pdffuncdur = pdfrefitems("log_normal")
+              case "normal" => pdffuncdur = pdfrefitems("normal")
+            }
+          }
+        }
+
+        if(cpdfdurargs != null){
+          if(cpdfdurargs.getCellTypeEnum() == CellType.STRING){
+            cpdfdurargs.getStringCellValue() match {
+              case "<END>" => endfile = true
+              //case regexpdfarg => pdfdurargs = regexpdfarg.findAllIn(cpdfdurargs.getStringCellValue()).toArray
+              case regexpdfarg(mean,std) => pdfdurargs = Array(mean,std)
+	    }
+          }
+        }
+
+        if(cpdffunccost != null){
+          if(cpdffunccost.getCellTypeEnum() == CellType.STRING){
+            cpdffunccost.getStringCellValue() match {
+              case "<END>" => endfile = true
+              case "log_normal" => pdffunccost = pdfrefitems("log_normal") 
+              case "normal" => pdffunccost = pdfrefitems("normal")
+            }
+          }
+        }
+
+        if(cpdfcostargs != null){
+          if(cpdfcostargs.getCellTypeEnum()==CellType.STRING){
+            cpdfcostargs.getStringCellValue() match {
+              case "<END>" => endfile = true
+              //case regexpdfargs => pdfcostargs = regexpdfargs.findAllIn(cpdfcostargs.getStringCellValue()).toArray 
+              case regexpdfarg(mean, std) => pdfcostargs = Array(mean, std) 
+            }
+          }
         }
 
         if (endfile==false & name!=""){ 
 
-          var newTask = Task(name, value)
+          var newTask = Task(
+            name,
+            startdate, 
+            bcdurext,
+            bcdurbpp, 
+            bconeoffcostext,
+            bcdayratext, 
+            bconeoffcostbpp, 
+            bcdayratebpp,
+            pdffuncdur,
+            pdfdurargs, 
+            pdffunccost,
+            pdfcostargs 
+          )
           opmap+=(name -> newTask)
 
           if (predecessor.isEmpty()){

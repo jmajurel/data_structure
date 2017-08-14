@@ -4,7 +4,7 @@
 		module="graphpratice-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170813150648"
+		publication="20170814203503"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
