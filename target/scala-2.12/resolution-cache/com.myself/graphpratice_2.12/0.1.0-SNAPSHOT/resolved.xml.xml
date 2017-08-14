@@ -4,7 +4,7 @@
 		module="graphpratice_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20170813214900"
+		publication="20170814115006"
 	>
 		<description>
 		graphpratice
@@ -35,8 +35,8 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.2" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.2" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scala-graph" name="graph-core_2.12" rev="1.11.5" conf="compile->default(compile)"/>
-		<dependency org="org.apache.poi" name="poi" rev="3.15-beta2" conf="compile->default(compile)"/>
-		<dependency org="org.apache.poi" name="poi-ooxml" rev="3.15-beta2" conf="compile->default(compile)"/>
-		<dependency org="org.apache.poi" name="poi-ooxml-schemas" rev="3.15-beta2" conf="compile->default(compile)"/>
+		<dependency org="org.apache.poi" name="poi" rev="3.16" conf="compile->default(compile)"/>
+		<dependency org="org.apache.poi" name="poi-ooxml" rev="3.16" conf="compile->default(compile)"/>
+		<dependency org="org.apache.poi" name="poi-ooxml-schemas" rev="3.16" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

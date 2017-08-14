@@ -10,3 +10,7 @@ run
 exi
 exit
 run
+reload
+clean
+reload
+run
