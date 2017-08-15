@@ -7,7 +7,8 @@ import org.apache.poi.ss.usermodel.DataFormat
 import breeze.stats.distributions.{LogNormal,Gaussian}
 import java.io.{File, FileOutputStream}
 
-object GraphPratice{
+
+object Model{
 
   def main(args:Array[String]) {
 
@@ -17,7 +18,6 @@ object GraphPratice{
      * The Task class represents the task operations contain in the input file.
      */
     case class Task(
-
       name:String, 
       startdate: Option[String],
 
@@ -38,7 +38,7 @@ object GraphPratice{
     /* useful regex which analyse the text */
     
     val regexop = raw"([a-zA-Z]+\d+(\-\d+)?)".r
-    val regexpre = raw"[a-zA-Z]+\d+(\-\d+)?".r
+    val regexpre = raw"([a-zA-Z]+\d+(?:\-\d+)?)".r
     val regexpdfarg = raw"(\d+(?:\.\d+)?),(\d+(?:\.\d+)?)".r  
 
     val workbook = WorkbookFactory.create(new File("Scenario_Operations_Overview_DEV.xlsx"))
@@ -139,10 +139,9 @@ object GraphPratice{
 
         if(cpredecessor != null){
           if(cpredecessor.getCellTypeEnum() == CellType.STRING){
-            cpredecessor.getStringCellValue() match {
-              case "<END>" => endfile = true
-              case regexpre(predecessors) => predecessor = predecessors
-            }
+            var predecessors = cpredecessor.getStringCellValue()
+            if(predecessors == "<END>") endfile = true
+            else predecessor = regexpre.findAllIn(predecessors).toList
           }
         }
 
@@ -231,13 +230,12 @@ object GraphPratice{
           if(cpdfcostargs.getCellTypeEnum()==CellType.STRING){
             cpdfcostargs.getStringCellValue() match {
               case "<END>" => endfile = true
-              //case regexpdfargs => pdfcostargs = regexpdfargs.findAllIn(cpdfcostargs.getStringCellValue()).toArray 
               case regexpdfarg(mean, std) => pdfcostargs = Array(mean, std) 
             }
           }
         }
 
-        if (endfile==false & name!=""){ 
+        if (endfile == false & name != ""){ 
 
           var newTask = Task(
             name,
@@ -267,6 +265,14 @@ object GraphPratice{
         row = row + 1
       }
     }
-    println("graph:"+(g mkString "-" ))
+    println("graph:"+(g.nodes mkString "\n" ))
+  }
+}
+
+class Model{
+
+  def load(filename:String):Graph = {
+
+
   }
 }

@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/jeanfelix/Documents/graph/graphpratice/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/jmajurel/Documents/data_structure/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: com.myself#graphpratice_2.12;0.1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7557,19 +7557,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1098ms :: artifacts dl 51ms[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT compile produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT runtime produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT test produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT provided produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT optional produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT compile-internal produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT runtime-internal produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT test-internal produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT plugin produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT sources produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT docs produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT pom produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT scala-tool produced in /home/jeanfelix/Documents/graph/graphpratice/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1098ms resolve - 51ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1494ms :: artifacts dl 92ms[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT compile produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT runtime produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT test produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT provided produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT optional produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT compile-internal produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT runtime-internal produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT test-internal produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT plugin produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT sources produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT docs produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT pom produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.myself#graphpratice_2.12;0.1.0-SNAPSHOT scala-tool produced in /home/jmajurel/Documents/data_structure/target/scala-2.12/resolution-cache/reports/com.myself-graphpratice_2.12-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1494ms resolve - 92ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
