@@ -1,12 +1,13 @@
 import scalax.collection.Graph
 import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
+import scalax.collection.GraphTraversal.Successors
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 import org.apache.poi.ss.usermodel.{Cell, CellType}
 import org.apache.poi.ss.usermodel.DataFormat
 import breeze.stats.distributions.{LogNormal,Gaussian}
 import java.io.{File, FileOutputStream}
-
+import scala.collection.mutable.ArrayBuffer
 
 object Model{
 
@@ -265,14 +266,18 @@ object Model{
         row = row + 1
       }
     }
-    println("graph:"+(g.nodes mkString "\n" ))
+
+    //println("graph:"+(g.nodes mkString "\n" ))
+    val innerRoot = g get opmap("root")
+    val result = (ArrayBuffer.empty[String] /: innerRoot.innerNodeDownUpTraverser) {
+        (buf, param) => param match {
+          case (down, node) => 
+            if (down) buf += (if (node eq innerRoot) "(" else "[") += node.toString
+            else      buf += (if (node eq innerRoot) ")" else "]")
+        }
+    }
+    println(("" /: result)(_+_)) // "(A[B1][B2])"    
+    //println(g.nodes.head.outerNodeTraverser.withDirection(Successors) mkString "\n")
   }
 }
 
-class Model{
-
-  def load(filename:String):Graph = {
-
-
-  }
-}
