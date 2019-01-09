@@ -55,14 +55,12 @@ class names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Model$Task$3
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Model$Task$4$
 used names:
-214 items
+208 items
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> !=
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> &
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> &&
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> +
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> +=
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> ->
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> /:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> <
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> <byname>
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> <init>
@@ -86,6 +84,7 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> DataFormat
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> DataFormatter
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> DiEdge
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Direction
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Double
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> E
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> EdgeAssoc
@@ -93,14 +92,12 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> File
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> FileOutputStream
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Function1
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Function2
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Gaussian
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Graph
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> GraphEdge
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> GraphPredef
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> GraphTraversal
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> IndexOutOfBoundsException
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> InnerNodeDownUpTraverser
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Int
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Iterator
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> JavaConversions
@@ -118,6 +115,7 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Nothing
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Object
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Option
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> OuterNodeTraverser
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Param
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Parameters
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> Predef
@@ -158,8 +156,7 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> WorkbookFactory
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> X
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> _$7
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> _1
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> _2
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> _1.type
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> _root_
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> _toString
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> anyHash
@@ -174,7 +171,6 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> bconeoffcostbpp
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> bconeoffcostext
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> breeze
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> buf
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> cbcdayratebpp
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> cbcdayratext
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> cbcdurbpp
@@ -191,12 +187,11 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> cpredecessor
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> create
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> cstartdate
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> currentNode
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> currentrow
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> deprecated seqAsJavaList
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> distributions
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> doubleHash
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> down
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> empty
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> endfile
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> eq
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> finalizeHash
@@ -214,7 +209,6 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> getSheetAt
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> getStringCellValue
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> immutable
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> innerNodeDownUpTraverser
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> innerRoot
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> io
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> isEmpty
@@ -225,14 +219,13 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> mean
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> mix
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> mutable
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> myfunction
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> name
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> ne
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> newTask
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> node
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> opmap
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> org
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> outerNodeTraverser
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> package
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> param
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> pdfcostargs
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> pdfdurargs
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> pdffunccost
@@ -249,7 +242,6 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> regexop
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> regexpdfarg
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> regexpre
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> result
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> root
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> row
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> runtime
@@ -262,23 +254,25 @@ used names:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> std
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> toList
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> toString
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> traverser
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> typedProductIterator
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> unapplySeq
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> unary_!
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> usermodel
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> while$1
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> withDirection
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> workbook
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> ||
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> ~>
 product stamps:
 4 items
-/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model$.class -> lastModified(1502900216000)
-/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model$Task$3.class -> lastModified(1502900216000)
-/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model$Task$4$.class -> lastModified(1502900216000)
-/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model.class -> lastModified(1502900216000)
+/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model$.class -> lastModified(1502963940000)
+/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model$Task$3.class -> lastModified(1502963940000)
+/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model$Task$4$.class -> lastModified(1502963940000)
+/home/jmajurel/Documents/data_structure/target/scala-2.12/classes/Model.class -> lastModified(1502963940000)
 source stamps:
 1 items
-/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> hash(b0dcdb7ba325d5a7d1df689a1de2c6aaba947248)
+/home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> hash(e1f384e31ac0605767a30ebd61ee0c1e12d449c0)
 binary stamps:
 6 items
 /root/.ivy2/cache/org.apache.poi/poi-ooxml/jars/poi-ooxml-3.16.jar -> lastModified(1491949671000)
@@ -290,15 +284,15 @@ binary stamps:
 class names:
 6 items
 /root/.ivy2/cache/org.apache.poi/poi-ooxml/jars/poi-ooxml-3.16.jar -> org.apache.poi.ss.usermodel.WorkbookFactory
-/root/.ivy2/cache/org.apache.poi/poi/jars/poi-3.16.jar -> org.apache.poi.ss.usermodel.Workbook
-/root/.ivy2/cache/org.scala-graph/graph-core_2.12/jars/graph-core_2.12-1.11.5.jar -> scalax.collection.Graph$
-/root/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> scala.Product
-/root/.ivy2/cache/org.scalanlp/breeze_2.12/jars/breeze_2.12-0.13.2.jar -> breeze.stats.distributions.Gaussian$
+/root/.ivy2/cache/org.apache.poi/poi/jars/poi-3.16.jar -> org.apache.poi.ss.usermodel.Sheet
+/root/.ivy2/cache/org.scala-graph/graph-core_2.12/jars/graph-core_2.12-1.11.5.jar -> scalax.collection.generic.GraphCoreCompanion
+/root/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> scala.runtime.AbstractFunction12
+/root/.ivy2/cache/org.scalanlp/breeze_2.12/jars/breeze_2.12-0.13.2.jar -> breeze.stats.distributions.LogNormal$
 /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar -> java.lang.Object
 internal apis:
 1 items
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwcAOtuwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwQeJ1Q3QABm5vdGlmeXNxAH4ADL5AMBB0AAR3YWl0c3EAfgAMQ6sc6HQADSRhc0luc3RhbmNlT2ZzcQB+AAwp2NTJdAAGZXF1YWxzc3EAfgAMrt27IXQADGFzSW5zdGFuY2VPZnNxAH4ADNOwXER0AAxzeW5jaHJvbml6ZWRzcQB+AAzoHyv6dAANJGlzSW5zdGFuY2VPZnNxAH4ADPJWbM10AARtYWluc3EAfgAMv06taXQACW5vdGlmeUFsbHNxAH4ADD+duf50AAVNb2RlbHNxAH4ADDgoGPx0AAxpc0luc3RhbmNlT2ZzcQB+AAzuQ8E6dAACPT1zcQB+AAyOdMGFdAAFY2xvbmVzcQB+AAxC03BidAAIdG9TdHJpbmdzcQB+AAxB8c6EdAACIT1zcQB+AAypTM0fdAAIZ2V0Q2xhc3NzcQB+AAyojRjRdAACbmVzcQB+AAy31zZrdAACZXFzcQB+AAykF6FQdAACIyNzcQB+AAzsVBgXdAAIZmluYWxpemVzcQB+AAySld5FdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBBeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAcQB+ACF1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFhzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQUwACWluaGVyaXRlZHEAfgBBTAAHcGFyZW50c3EAfgBBeHEAfgBdc3EAfgBYdXEAfgA8AAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBCcQB+AEt1cQB+AEwAAAAAc3EAfgBOAHEAfgAddXEAfgBQAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AFx0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBcc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgB4dXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4AZXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AU3QABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AbFsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AXHNxAH4Aa3QABUFycmF5cQB+AHF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4Aa3QABlN0cmluZ3NxAH4Ab3NxAH4AcnVxAH4AdQAAAANzcQB+AHd0AARqYXZhc3EAfgB3dAAEbGFuZ3EAfgB8c3EAfgBYdXEAfgA8AAAAAHNxAH4AWHVxAH4AkAAAAAJzcQB+AGt0AAZPYmplY3RxAH4AlHNxAH4Aa3QAA0FueXEAfgBxdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV3r1VtvdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUsNzbe6Ml1afR32iaHeLGqrqUckg=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwcAOtuwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwQeJ1Q3QABm5vdGlmeXNxAH4ADL5AMBB0AAR3YWl0c3EAfgAMQ6sc6HQADSRhc0luc3RhbmNlT2ZzcQB+AAwp2NTJdAAGZXF1YWxzc3EAfgAMrt27IXQADGFzSW5zdGFuY2VPZnNxAH4ADNOwXER0AAxzeW5jaHJvbml6ZWRzcQB+AAzoHyv6dAANJGlzSW5zdGFuY2VPZnNxAH4ADPJWbM10AARtYWluc3EAfgAMv06taXQACW5vdGlmeUFsbHNxAH4ADD+duf50AAVNb2RlbHNxAH4ADDgoGPx0AAxpc0luc3RhbmNlT2ZzcQB+AAzuQ8E6dAACPT1zcQB+AAyOdMGFdAAFY2xvbmVzcQB+AAxC03BidAAIdG9TdHJpbmdzcQB+AAxB8c6EdAACIT1zcQB+AAypTM0fdAAIZ2V0Q2xhc3NzcQB+AAyojRjRdAACbmVzcQB+AAy31zZrdAACZXFzcQB+AAykF6FQdAACIyNzcQB+AAzsVBgXdAAIZmluYWxpemVzcQB+AAySld5FdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBBeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAcQB+ACF1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFhzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQUwACWluaGVyaXRlZHEAfgBBTAAHcGFyZW50c3EAfgBBeHEAfgBdc3EAfgBYdXEAfgA8AAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBCcQB+AEt1cQB+AEwAAAAAc3EAfgBOAHEAfgAddXEAfgBQAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AFx0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBcc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgB4dXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4AZXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AU3QABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AbFsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AXHNxAH4Aa3QABUFycmF5cQB+AHF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4Aa3QABlN0cmluZ3NxAH4Ab3NxAH4AcnVxAH4AdQAAAANzcQB+AHd0AARqYXZhc3EAfgB3dAAEbGFuZ3EAfgB8c3EAfgBYdXEAfgA8AAAAAHNxAH4AWHVxAH4AkAAAAAJzcQB+AGt0AAZPYmplY3RxAH4AlHNxAH4Aa3QAA0FueXEAfgBxdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV3vobf3dXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU4fOE4xrAYFdnow69Ye4MHhLUScA=
 external apis:
 0 items
 source infos:
@@ -306,7 +300,7 @@ source infos:
 /home/jmajurel/Documents/data_structure/src/main/scala/model.scala -> 
 AAAAAAAAAAA=
 compilations:
-26 items
+31 items
 00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXeVJo1Z1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
 01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXeVKKUJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
 02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXeVK6ct1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
@@ -333,3 +327,8 @@ compilations:
 23 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXevRVxN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
 24 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXevU3dp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
 25 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXevVW291cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
+26 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXe+AMn11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
+27 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXe+B/UZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
+28 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXe+FeJR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
+29 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXe+XjF51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==
+30 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXe+ht/d1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9ob21lL2ptYWp1cmVsL0RvY3VtZW50cy9kYXRhX3N0cnVjdHVyZS90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABLw==

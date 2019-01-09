@@ -1,6 +1,6 @@
 [0m[[0minfo[0m] [0mRunning Model [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-3 to terminate.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-f to terminate.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/home/jmajurel/Documents/data_structure/target/scala-2.12/classes[0m
 [0m[[0mdebug[0m] [0m	/root/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar[0m
@@ -53,7 +53,7 @@
 [0m[[0mdebug[0m] [0m	/root/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.5.jar[0m
 [0m[[0mdebug[0m] [0m	/root/.ivy2/cache/bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-138.jar[0m
 [0m[[0mdebug[0m] [0m	/root/.ivy2/cache/bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-138.jar[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-3 exited.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-f exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

@@ -2,9 +2,11 @@ import scalax.collection.Graph
 import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
 import scalax.collection.GraphTraversal.Successors
+
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 import org.apache.poi.ss.usermodel.{Cell, CellType}
 import org.apache.poi.ss.usermodel.DataFormat
+
 import breeze.stats.distributions.{LogNormal,Gaussian}
 import java.io.{File, FileOutputStream}
 import scala.collection.mutable.ArrayBuffer
@@ -269,14 +271,11 @@ object Model{
 
     //println("graph:"+(g.nodes mkString "\n" ))
     val innerRoot = g get opmap("root")
-    val result = (ArrayBuffer.empty[String] /: innerRoot.innerNodeDownUpTraverser) {
-        (buf, param) => param match {
-          case (down, node) => 
-            if (down) buf += (if (node eq innerRoot) "(" else "[") += node.toString
-            else      buf += (if (node eq innerRoot) ")" else "]")
-        }
-    }
-    println(("" /: result)(_+_)) // "(A[B1][B2])"    
+    val traverser = innerRoot.outerNodeTraverser.withDirection(Successors)
+    println("result: "+traverser.toList)
+    val myfunction = (currentNode: Task) => println("bcdurext: "+currentNode.bcdurext)
+    traverser.foreach(myfunction)
+    //println(("" /: result)(_+_)) // "(A[B1][B2])"    
     //println(g.nodes.head.outerNodeTraverser.withDirection(Successors) mkString "\n")
   }
 }
